@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deal Hunter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900 min-h-screen flex items-center justify-center px-4 text-white">
+
+    <div class="w-full max-w-sm">
+
+        <h1 class="text-3xl font-black text-amber-400 mb-1 text-center">Deal Hunter</h1>
+        <p class="text-zinc-500 text-sm text-center mb-8">Price alert system</p>
+
+        <div class="bg-zinc-800 border border-zinc-700 rounded-lg p-6">
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                    <div class="mb-4 p-3 rounded text-sm bg-zinc-700 text-zinc-200">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <form method="POST" class="space-y-4">
+                <input type="email" name="login_email" placeholder="Email address" required
+                       class="w-full p-3 bg-zinc-900 border border-zinc-600 rounded text-sm text-white focus:outline-none focus:border-amber-500">
+                
+                <button type="submit" class="w-full bg-amber-400 text-black font-bold p-3 rounded hover:bg-amber-300">
+                    Log In
+                </button>
+            </form>
+
+            <div class="text-center text-zinc-500 my-4 text-sm">- or -</div>
+
+            <form method="POST">
+                <button type="submit" class="w-full border border-zinc-600 text-zinc-400 font-bold p-3 rounded hover:bg-zinc-700">
+                    Continue as Guest
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
