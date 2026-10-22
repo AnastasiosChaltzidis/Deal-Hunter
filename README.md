@@ -74,3 +74,8 @@ EMAIL_PASSWORD="Το Google App Password σας (δημιουργείται απ
 
 
 Σημείωση Συμβατότητας: Η εφαρμογή είναι βελτιστοποιημένη για τα Bestprice.gr, Skroutz.gr και Shopflix.gr. Αν και δέχεται links από άλλα sites, η ανίχνευση τιμής ενδέχεται να αποτύχει, καθώς απλώς εξάγει τον πρώτο έγκυρο αριθμό που θα βρει δίπλα σε ένα σύμβολο "€".
+
+Στιγμιότυπα:
+
+<img width="2559" height="1350" alt="image" src="https://github.com/user-attachments/assets/9f7940fb-e4a6-418b-9914-2d58e5061a67" />
+
